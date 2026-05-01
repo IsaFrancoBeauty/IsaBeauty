@@ -13,19 +13,7 @@
 
 
 
-/* Estado inicial: invisível e um pouco abaixo */
-.reveal {
-    opacity: 0;
-    transform: translate3d(0, 30px, 0); /* Força uso da GPU */
-    transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), 
-                transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    will-change: transform, opacity; /* Avisa o navegador para se preparar */
-}
 
-.reveal.active {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
         /* --- VARIÁVEIS E RESET --- */
         :root {
             --bg-dark: #121212;
@@ -425,7 +413,7 @@ background-color: #f7ebda;
 
     <div class="hero">
 
-        <div class="confirmation-container reveal">
+        <div class="confirmation-container ">
             <div class="header-image-container">
                 <div class="back-button"><span>&lt;</span></div> <a href="https://www.instagram.com/isafrancobeauty/" class="back-button"><span>‹</span></a>
 
@@ -433,11 +421,11 @@ background-color: #f7ebda;
 
                 </div>
 
-                <img src="logov2.png" alt="Studio">
+                <img src="logo.png" alt="Studio">
             </div>
 
             <div class="white-bottom-card">
-                <div class="floating-service-card reveal">
+                <div class="floating-service-card ">
                     <div class="service-circle-img">
                         <img src="https://i.pinimg.com/1200x/4b/0e/29/4b0e29e12acaafe7423445cd6f0664ab.jpg" alt="Service">
 
@@ -453,7 +441,7 @@ background-color: #f7ebda;
                     </div>
                 </div>
 
-                <div class="details-grid reveal">
+                <div class="details-grid ">
                     <div class="details-column">
                         <p class="label-muted">Inspire-se</p>
                         <div class="inspo-avatars">
@@ -471,7 +459,7 @@ background-color: #f7ebda;
                     </div>
                 </div>
 
-                <button class="pay-button-ref reveal" id="btn-pay" onclick="handlePayment()">WhatsApp</button>
+                <button class="pay-button-ref " id="btn-pay" onclick="handlePayment()">WhatsApp</button>
 
                 <p class="terms-text">.</p>
             </div>
@@ -479,7 +467,7 @@ background-color: #f7ebda;
     </div>
 
     <div class="app-shell">
-        <header class="catalog-header reveal" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px;">
+        <header class="catalog-header " style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px;">
             <div>
                 <h1 style="font-weight: 500;">Trabalhos</h1>
                 <p class="text-muted">Referências para o seu atendimento</p>
@@ -487,13 +475,13 @@ background-color: #f7ebda;
 
         </header>
 
-        <div class="reveal" style="display: flex; gap: 8px; overflow-x: auto; margin-bottom: 25px;">
+        <div  style="display: flex; gap: 8px; overflow-x: auto; margin-bottom: 25px;">
             <div class="tag">Naturalidade </div>
             <div class="tag">Beleza</div>
             <div class="tag">Elegância</div>
         </div>
 
-        <div class="grid-catalog reveal">
+        <div class="grid-catalog ">
             <div style="background: linear-gradient(180deg, #0d0d0d 0%, #1a1512 25%, #2b201a 45%, #3a2a20 55%, #1a1512 75%, #0a0a0a 100% ); border-radius: 24px; padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                 <img src="perfil.jpg" style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 10px;">
                 <p style="font-size: 14px; font-weight: 400;">Isabela franco</p>
@@ -506,7 +494,7 @@ background-color: #f7ebda;
             <div class="image-item"><img src="https://i.pinimg.com/736x/e8/2b/2c/e82b2cd5c7036746e87e55d9f4b59f11.jpg"></div>
         </div>
 
-        <section class="reveal">
+        <section class="">
             <div class="catalog-header">
                 <div class="header-title">
                     <h1 style=" font-weight: 550; font-size: 24px;">Serviços menu</h1>
@@ -555,7 +543,7 @@ background-color: #f7ebda;
             </div>
         </section>
 
-        <section class="experience-video reveal" style="margin-top: 50px; padding: 0 4px;">
+        <section class="experience-video " style="margin-top: 50px; padding: 0 4px;">
             <div class="catalog-header" style="margin-bottom: 20px;">
                 <div class="header-title">
                     <h1 style="font-size: 22px; font-weight: 500; letter-spacing: -0.5px;">Realçando sua beleza </h1>
@@ -578,7 +566,7 @@ background-color: #f7ebda;
             </div>
         </section>
 
-        <section class="aftercare reveal" style="margin-top: 50px;">
+        <section class="aftercare " style="margin-top: 50px;">
             <h2 style="font-family: 'Instrument Sans'; font-weight: 500; font-size: 20px; margin-bottom: 20px;">Dicas de cuidado</h2>
             <div style="display: flex; gap: 12px; overflow-x: auto; padding-bottom: 10px;">
                 <div class="care-card">
@@ -612,7 +600,7 @@ background-color: #f7ebda;
             </div>
         </section>
 
-        <section class="testimonials reveal" style="margin-top: 60px; margin-bottom: 60px;">
+        <section class="testimonials " style="margin-top: 60px; margin-bottom: 60px;">
             <div class="catalog-header" style="text-align: center; display: block;">
                 <h1 style="font-size: 24px; font-weight: 500; margin-bottom: 30px;">resultados</h1>
             </div>
@@ -652,7 +640,7 @@ background-color: #f7ebda;
             </div>
         </section>
 
-        <section id="agenda" class="booking-section reveal" style="margin-top: 60px; padding: 0 4px;">
+        <section id="agenda" class="booking-section " style="margin-top: 60px; padding: 0 4px;">
             <div class="catalog-header">
                 <div class="header-title">
                     <h1 style=" font-weight: 500; font-size: 24px; letter-spacing: -0.5px;">Agenda</h1>
@@ -674,7 +662,7 @@ background-color: #f7ebda;
             </p>
         </section>
 
-        <section class="location reveal" style="margin-top: 50px;">
+        <section class="location " style="margin-top: 50px;">
             <div style="background: linear-gradient(180deg,#0d0d0d 0%,#1a1512 25%, #2b201a 45%, #3a2a20 55%, #1a1512 75%, #0a0a0a 100%); border-radius: var(--radius-lg); padding: 25px; border: 1px solid rgba(255,255,255,0.05);">
                 <h3 style="font-family: 'Instrument Sans'; font-size: 18px; margin-bottom: 15px;">Local</h3>
 
@@ -690,7 +678,7 @@ background-color: #f7ebda;
             </div>
         </section>
 
-        <footer class="reveal" style="margin-top: 80px; padding: 40px 20px; text-align: center; opacity: 0.5;">
+        <footer  style="margin-top: 80px; padding: 40px 20px; text-align: center; opacity: 0.5;">
             <p style="font-size: 12px; letter-spacing: 1px;">IsaBeauty • Lash & Design</p>
             <p style="font-size: 10px; margin-top: 10px;">Mogi das Cruzes, SP</p>
         </footer>
@@ -874,10 +862,7 @@ const scrollObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Seleciona todos os elementos que têm a classe 'reveal' e começa a observar
-document.querySelectorAll('.reveal').forEach((el) => {
-    scrollObserver.observe(el);
-});
+
 </script>
 
 
